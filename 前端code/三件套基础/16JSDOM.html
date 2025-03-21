@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div>
+        <p><b>DOM的作用是给这个文档树（节点树）提供一个编程接口，也就是API，开发者能通过JS来操作这个树状结构</b></p>
+    </div>
+    <img src="/image.png" alt="" width="500px">
+
+    <div id="box1">这是一个ID选择器标签</div>
+    <div class="box2">这是一个类选择器标签</div>
+    <div>普通div标签</div>
+    <button>点击按钮</button>
+    <br>
+    <button id="button2">点击按钮2</button>
+    <script>
+        document.getElementById("box1").style.color="red"; 
+        //通过className或者tagName获取元素是获取一个数组，tag获取的是标签
+        var element_class = document.getElementsByClassName("box2")[0];
+        console.log(element_class);
+        var element_id = document.getElementById("box1");
+        //innerHTML可以解析文本语意
+        element_id.innerHTML='<a href="#">跳转链接</a>';    
+        //innerText得到完整文本
+        element_class.innerText='<a href="#">跳转链接</a>'; 
+
+        //通过DOM属性绑定事件
+        var button_element = document.getElementsByTagName("button")[0];
+        button_element.onclick = function(){    //匿名函数,没有名字
+            alert('DOM属性按键触发');
+        }
+
+        //通过addEventListener绑定事件
+        var button2_element = document.getElementById("button2");
+        // button2_element.addEventListener('click',function(){
+        //     alert('addEventListener按键触发');
+        // })
+        function click_event(){
+            alert('addEventListener按键触发');
+        }
+        button2_element.addEventListener('click',click_event);
+    </script>
+    <br>
+    <img src="/image2.png" alt="" width="500px"">
+</body>
+</html>

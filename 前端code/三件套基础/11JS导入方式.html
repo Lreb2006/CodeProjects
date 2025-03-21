@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS导入方式</title>
+    <script>    //script用于导入JS标签
+        // console对象用于将信息输出到浏览器的控制台
+        console.log('hello,Head标签的内联样式');
+    </script>
+    
+    <script src="./myscript.js"></script>  
+</head>
+<body>
+    <h1>JS导入方式</h1>
+    <script>
+        console.log('hello,body标签的内联样式');
+        alert('你好,内联样式弹窗');     //alert()用于弹出弹窗
+    </script>
+    最先打印Head标签的内联样式,之后打印外部导入的,最后打印body标签的内联样式
+</body>
+</html>

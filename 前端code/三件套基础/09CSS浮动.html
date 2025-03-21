@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS浮动</title>
+    <style>
+        .father{
+           background-color: sandybrown;
+           /* height: 150px; */
+           border: 3px solid red;
+            /*因为浮动元素脱离文档流，所以父元素出现坍塌  */
+            /* 清除浮动 */
+             overflow: hidden; 
+        }
+        .father::after{
+            /* 创建一个空的伪元素 */
+            content: " ";
+            /* 使其成为块级元素 */
+            display: block;
+            /* 清除所有浮动 */
+            clear: both;
+        }
+        .left-son{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            float: left;
+        }
+        .right-son{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="left-son">左浮动</div>
+        <div class="right-son">右浮动</div>
+    </div>
+</body>
+</html>

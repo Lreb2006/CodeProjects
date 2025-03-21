@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS盒子模型</title>
+    <style>
+        .demo{
+            background-color: aqua;
+            /* 边框宽度、实线、颜色 */
+            border: 5px solid red;  
+        }
+        .demo2{
+            background-color: aqua;
+            /* 虚线 */
+            border: 5px dashed blue;
+        }
+        .demo3{
+            background-color: seagreen;
+            /* 点线 */
+            border: 5px dotted yellow;
+        }
+        .demo4{
+            background-color: yellowgreen;
+            /* 双实线 */
+            border: 5px double darkmagenta;
+        }
+        #border-demo{
+            background-color: yellow;
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border-style: groove;
+            /* 顺时针 */
+            border-width: 10px 20px 30px 40px;
+            border-color: blueviolet;
+            /* padding是内边距 */
+            padding: 50px;
+            /* margin是外边距 */
+            margin: 40px;
+        }
+    </style>
+</head>
+<body>
+    <span class="demo">
+        这难道不是这样的吗？
+    </span>
+    <hr>
+    <span class="demo2">
+        这难道不是这样的吗？
+    </span>
+    <hr>
+    <span class="demo3">
+        这难道不是这样的吗？
+    </span>
+    <hr>
+    <span class="demo4">
+        这难道不是这样的吗？
+    </span>
+    <hr>
+    <div id="border-demo">这是一个边框示例</div>
+</body>
+</html>

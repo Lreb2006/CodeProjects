@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS基础语法</title>
+</head>
+<body>
+    <script>
+    //if语句
+    let time = 12;
+    if(time <12){
+        console.log('上午');
+    }else if(time >=12 && time <=18){
+        console.log('下午');
+    }else{
+        console.log('晚上');
+    }
+    //for循环
+    for(let i=0;i<10;i++){
+        console.log(i);
+    }
+    //while循环
+    let count = 1;
+    while(count <= 5){
+        console.log(count);
+        count++;
+    }
+    //break和continue
+    for(var i=0;i<10;i++){
+        if(i==5){
+            break;
+        }
+        if(i==3){
+            continue;
+        }
+        console.log(i);     //打印0 1 2 4
+    }
+    </script>
+</body>
+</html>

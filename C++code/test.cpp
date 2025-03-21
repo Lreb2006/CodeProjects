@@ -1,12 +1,8 @@
 #include<bits/stdc++.h>
+#include<map>
 using namespace std;
 
-int main(void)
-{
-    string intreast = "dui1";
-    cout<<"re"<<endl;
-    if(intreast||){
-        cout<<
-    }
+int main(){
+    
     return 0;
 }

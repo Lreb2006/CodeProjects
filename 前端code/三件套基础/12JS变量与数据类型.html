@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS基础语法</title>
+</head>
+<body>
+    <script>
+        var x;                  //声明变量，具有函数作用域，避免使用var
+        let y;                  //具有块级作用域，更安全更灵活
+        const PI = 3.14;        //常量
+        console.log(x,y,PI);    //显示undefined undefined 3.14，undefined表示可能被被赋值
+
+        let name = 'zhangsan';  //字符串
+        console.log(name);
+
+        let empty_value = null;
+        console.log(empty_value);  //显示null,表示这个变量被明确赋值为空值
+    </script>
+</body>
+</html>

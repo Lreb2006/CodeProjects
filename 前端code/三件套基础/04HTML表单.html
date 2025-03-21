@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单form</title>
+</head>
+<body>
+    <form action="#">
+        <!-- input表示输入框 -->
+        <input type="text" placeholder="虚">
+        <input type="text" value="实">
+        <br>
+        <label for="username">用户名:</label>
+        <input type="text" id="username" placeholder="请输入用户名">
+        <br>
+        <label for="password">密 码：</label>
+        <input type="password" id="password" placeholder="请输入密码">
+        <br>
+        <label for="">性别：</label>
+        <!-- radio表示单选框 -->
+        <input type="radio" name="sex">男
+        <input type="radio" name="sex">女
+        <input type="radio" name="sex">其他 
+        <br>
+        <label for="">爱好：</label>
+        <!-- checkbox表示复选框 -->
+        <input type="checkbox" name="hobby">唱
+        <input type="checkbox" name="hobby">跳
+        <input type="checkbox" name="hobby">rap
+        <input type="checkbox" name="hobby">篮球
+        <br>
+        <label for="">城市：</label>
+        <!-- select表示下拉框 -->
+        <select name="" id="">
+            <!-- option表示选项 -->
+            <option value="">请选择</option>
+            <option value="">北京</option>
+        </select>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
