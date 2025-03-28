@@ -30,7 +30,7 @@ int main() {
         q.pop();
         int x = t.first, y = t.second;
 
-        // 检查当前节点是否是终点
+        // 检查初始节点是否是终点
         if (x == n - 1 && y == m - 1) {
             cout << d[x][y] << endl;
             return 0;
